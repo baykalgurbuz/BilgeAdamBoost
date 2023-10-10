@@ -7,6 +7,6 @@ public class Turkey extends TheGod{
 
     @Override
     void tanriMesaji() {
-        System.out.println("Ben Nordic Tanrısıyım: " + ad + ", Özellik: " + ozellik);
+        System.out.println("Ben Nordic Tanrısıyım: " + getAd() + ", Özellik: " + getOzellik());
     }
 }

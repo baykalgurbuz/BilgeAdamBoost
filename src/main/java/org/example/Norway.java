@@ -7,7 +7,7 @@ public class Norway extends TheGod{
 
     @Override
     void tanriMesaji() {
-        System.out.println("Ben Nordic Tanrısıyım: " + ad + ", Özellik: " + ozellik);
+        System.out.println("Ben Nordic Tanrısıyım: " + getAd() + ", Özellik: " + getOzellik());
     }
     void norwayGodPower() {
         System.out.println("Nordic Tanrısı gücü açığa çıkıyor...");

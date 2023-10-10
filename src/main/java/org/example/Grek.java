@@ -7,7 +7,7 @@ public class Grek extends TheGod{
 
     @Override
     void tanriMesaji() {
-        System.out.println("Ben Yunan Tanrısıyım: " + ad + ", Özellik: " + ozellik);
+        System.out.println("Ben Yunan Tanrısıyım: " + getAd() + ", Özellik: " + getOzellik());
     }
     void grekGodRitual(){
         System.out.println("Yunan Tanrısı ritüeli yapılıyor...");
