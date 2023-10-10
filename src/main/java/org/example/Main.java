@@ -2,13 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Grek kosmos =new Grek("Kosmos", "Tüm mitoloji benden olustu.", 1000);
-        kosmos.evreniYarat();
-        kosmos.tanriMesaji();
-        kosmos.tanriBilgileri();
-        Gaia uranus =new Gaia("Uranus","Kozmik bir gücüm vardır uzayın ta kendisiyim",4000);
-        uranus.whoAmI();
-        uranus.tanriBilgileri();
+        Grek gaia =new Grek("Gaia", "Toprak ana benim ve benim merhametim sizi yaşatacak.", 1000);
+        gaia.evreniYarat();
+        gaia.tanriMesaji();
+        gaia.tanriBilgileri();
+        Titans kronos =new Titans("Kronos ","Kozmik bir gücüm vardır ve zaman tanrısıyımdır ",4000);
+        kronos.whoAmI();
+        kronos.tanriBilgileri();
+        kronos.whoAmI();
         Norway odin = new Norway("Odin", "Bilgelik ve savaş tanrısı", 1500);
         Norway thor = new Norway("Thor", "Yıldırım,gökyüzünün ve tarım  tanrısı", 1000);
         odin.evreniYarat();
