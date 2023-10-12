@@ -9,8 +9,32 @@ public class Main {
         //fileReader();
         //fileWriter();
         //bufferWriter();
-        bufferAppendWriter();
-        bufferReader();
+        //bufferAppendWriter();
+        //bufferReader();
+        stringBuilder();
+        stringBuffered();
+    }
+
+    private static void stringBuffered() {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("Hello, ");
+        stringBuffer.append("world!");
+        System.out.println(stringBuffer.toString());
+        stringBuffer.insert(7, "Java String Buffer ");
+        System.out.println(stringBuffer.toString());
+        stringBuffer.delete(0, 7);
+        System.out.println(stringBuffer.toString());
+    }
+
+    private static void stringBuilder() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Merhaba, ");
+        stringBuilder.append("dünya!");
+        System.out.println(stringBuilder.toString());
+        stringBuilder.insert(7, "Java String Builder");
+        System.out.println(stringBuilder.toString());
+        stringBuilder.delete(0, 7);
+        System.out.println(stringBuilder.toString());
     }
 
     private static void bufferAppendWriter() {
