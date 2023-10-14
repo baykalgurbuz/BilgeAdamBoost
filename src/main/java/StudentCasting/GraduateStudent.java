@@ -5,7 +5,7 @@ import java.util.Date;
 public class GraduateStudent extends Student{
     private String advisor ;
     private String thesis;
-    GraduateStudent(int no, String name, int year, Date dob, String major,String advisor,String thesis) {
+    public GraduateStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis) {
         super(no, name, year, dob, major);
         this.advisor=advisor;
         this.thesis=thesis;
