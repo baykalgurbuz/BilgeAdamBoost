@@ -14,13 +14,21 @@ public class NKReader {
     }
     public ArrayList<String> readWords(){
         ArrayList<String> words =new ArrayList<>();
-        try (BufferedReader bufferReader = new BufferedReader(new FileReader(path))){
-            String line;
-            while ((line = bufferReader.readLine()) != null) {
-                words.add(line);
+        try (FileReader fileReader = new FileReader(path)) {
+            StringBuilder lineBuilder = new StringBuilder();
+            int character;
+            while ((character = fileReader.read()) != -1) {
+                if ((char) character == '\n') {
+                    words.add(lineBuilder.toString());
+                    lineBuilder.setLength(0);
+                } else {
+                    lineBuilder.append((char) character);
+                }
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            if (lineBuilder.length() > 0) {
+                words.add(lineBuilder.toString());
+            }
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

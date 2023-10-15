@@ -7,6 +7,6 @@ public class Main {
     {
     NKReader nk =new NKReader("C:\\Users\\EnesG\\OneDrive\\Masaüstü\\deneme.txt");
     ArrayList<String>dataArray =nk.readWords();
-    String dataLine = nk.readlineAt(2);
+    String dataLine = nk.readlineAt(0);
     }
 }
